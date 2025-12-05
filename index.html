@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrashMates - Turn Trash into Loot</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Exo 2', sans-serif; }
+        .neon-text { text-shadow: 0 0 10px #4ade80, 0 0 20px #4ade80; }
+        .hero-bg {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)), url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white antialiased">
+
+    <nav class="flex items-center justify-between px-6 py-4 bg-gray-900/90 fixed w-full z-50 border-b border-green-500/30 backdrop-blur-sm">
+        <div class="flex items-center gap-2">
+            <div class="w-10 h-10 bg-green-500 rounded flex items-center justify-center font-bold text-black">TM</div>
+            <span class="text-xl font-black tracking-wider text-white">TRASH<span class="text-green-400">MATES</span></span>
+        </div>
+        <a href="#join" class="px-5 py-2 bg-green-600 hover:bg-green-500 text-white font-bold rounded transition-all shadow-[0_0_15px_rgba(74,222,128,0.5)]">
+            BETA ACCESS
+        </a>
+    </nav>
+
+    <header class="hero-bg h-screen flex flex-col items-center justify-center text-center px-4 pt-16">
+        <h1 class="text-5xl md:text-7xl font-black uppercase mb-4 tracking-tight">
+            Turn Trash into <br><span class="text-green-400 neon-text">Legendary Loot</span>
+        </h1>
+        <p class="text-xl md:text-2xl text-gray-300 max-w-2xl mb-8">
+            The first game where the real grind saves the planet. Scan, clean the area, and equip your avatar with exclusive items.
+        </p>
+        <div class="flex flex-col md:flex-row gap-4 w-full justify-center">
+            <button class="px-8 py-4 bg-white text-gray-900 font-black rounded text-lg hover:scale-105 transition-transform flex items-center justify-center gap-2">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M17.5 12.6c.1-2 .3-3.6 1.4-5.2-1.2-1.7-3-2-5.2-2-2.2 0-4.3 1.3-5.4 1.3-1.1 0-2.8-1.3-4.6-1.3-2.4 0-4.6 1.4-5.9 3.6-2.5 4.3-.6 10.7 1.8 14.2 1.2 1.7 2.6 3.6 4.5 3.6 1.8 0 2.5-1.1 4.7-1.1 2.2 0 2.8 1.1 4.7 1.1 1.9 0 3.3-1.8 4.5-3.6 1.4-2 2-2.9 2-2.9s-1.6-.6-2.4-2.7z"/></svg>
+                App Store
+            </button>
+            <button class="px-8 py-4 bg-transparent border-2 border-gray-500 text-white font-black rounded text-lg hover:border-green-400 hover:text-green-400 transition-colors flex items-center justify-center gap-2">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M3 20.5v-17c0-.8.7-1.5 1.5-1.5h13c.8 0 1.5.7 1.5 1.5v17c0 .8-.7 1.5-1.5 1.5h-13c-.8 0-1.5-.7-1.5-1.5z"/></svg>
+                Google Play
+            </button>
+        </div>
+        <p class="mt-4 text-sm text-green-400 font-bold uppercase tracking-widest">Coming Soon</p>
+    </header>
+
+    <section class="py-20 bg-gray-900 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-black text-center mb-16 uppercase">Choose your <span class="text-green-400">Class</span></h2>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-700 hover:border-blue-500 transition-colors group">
+                    <div class="h-48 bg-gray-900 rounded-xl mb-6 flex items-center justify-center overflow-hidden relative">
+                        <img src="trash.png" alt="Scanner Mode" class="object-cover w-full h-full z-10 relative">
+                        <div class="absolute inset-0 bg-blue-500/10 group-hover:bg-blue-500/20 transition-all z-20 pointer-events-none"></div>
+                    </div>
+                    <h3 class="text-2xl font-black text-blue-400 mb-2">SCANNER</h3>
+                    <p class="text-gray-400 mb-4 font-mono text-sm">OBJECTIVE: RECON</p>
+                    <p class="text-gray-300">Spotted trash but in a rush? Mark the zone with a 360º video. Earn <strong class="text-white">Easy XP</strong> and create a 'Drop Point' on the map for the community.</p>
+                </div>
+
+                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-700 hover:border-green-500 transition-colors group">
+                    <div class="h-48 bg-gray-900 rounded-xl mb-6 flex items-center justify-center overflow-hidden relative">
+                        <img src="cleaner.png" alt="Cleaner Mode" class="object-cover w-full h-full z-10 relative">
+                        <div class="absolute inset-0 bg-green-500/10 group-hover:bg-green-500/20 transition-all z-20 pointer-events-none"></div>
+                    </div>
+                    <h3 class="text-2xl font-black text-green-400 mb-2">CLEANER</h3>
+                    <p class="text-gray-400 mb-4 font-mono text-sm">OBJECTIVE: ELIMINATION</p>
+                    <p class="text-gray-300">Go to marked zones. Film the cleanup in first-person (POV). Grab <strong class="text-white">Rare Loot Boxes</strong> and exclusive items.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-gray-800 px-6 border-t border-gray-700">
+        <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-10">
+            <div class="flex-1">
+                <h2 class="text-4xl font-black uppercase mb-4 leading-tight">Your Style.<br>Your <span class="text-green-400">Glory.</span></h2>
+                <p class="text-gray-300 mb-6 text-lg">
+                    You don't clean streets for charity. You clean to be the <strong>Boss</strong> of your neighborhood.
+                </p>
+                <ul class="space-y-3 mb-8">
+                    <li class="flex items-center gap-3">
+                        <span class="w-2 h-2 bg-green-400 rounded-full"></span>
+                        <span>Unlock Cyberpunk skins</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <span class="w-2 h-2 bg-green-400 rounded-full"></span>
+                        <span>Virtual pets that follow you</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <span class="w-2 h-2 bg-green-400 rounded-full"></span>
+                        <span>'Zone Guardian' badges</span>
+                    </li>
+                </ul>
+                <button class="px-6 py-3 bg-gray-700 hover:bg-gray-600 rounded font-bold transition-colors">View Avatar Gallery</button>
+            </div>
+            <div class="flex-1 w-full h-80 bg-gray-900 rounded-lg flex items-center justify-center border border-gray-600 relative overflow-hidden">
+                <img src="levelup.png" alt="Avatar Evolution" class="object-cover w-full h-full">
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-950 py-10 px-6 text-center border-t border-gray-800">
+        <div class="flex items-center justify-center gap-2 mb-6 opacity-50">
+            <div class="w-6 h-6 bg-green-500 rounded flex items-center justify-center font-bold text-black text-xs">TM</div>
+            <span class="font-bold tracking-widest text-white">TRASHMATES</span>
+        </div>
+        <p class="text-gray-500 text-sm mb-4">
+            Made for Gamers. Made for the Planet.
+        </p>
+        <div class="text-gray-600 text-xs">
+            <p>Privacy & Validation: All videos are validated by the community and AI.</p>
+            <p class="mt-2">&copy; 2025 TrashMates Startup.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
